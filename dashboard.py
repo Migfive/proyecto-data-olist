@@ -2,9 +2,25 @@ import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
 import plotly.express as px
-
+import os
 # Conexión
-engine = create_engine('sqlite:///olist_database.db')
+# Nombre de la base de datos local en el servidor
+DB_NAME = 'olist_database.db'
+engine = create_engine(f'sqlite:///{DB_NAME}')
+
+@st.cache_resource # Esto evita que se ingeste cada vez que muevas un filtro
+def inicializar_datos():
+    if not os.path.exists(DB_NAME):
+        files = [f for f in os.listdir('.') if f.endswith('.csv')]
+        if files:
+            for file in files:
+                table_name = file.replace('olist_', '').replace('_dataset.csv', '').replace('.csv', '')
+                df = pd.read_csv(file)
+                df.to_sql(table_name, con=engine, if_exists='replace', index=False)
+            return "Datos cargados"
+    return "Base de datos ya existente"
+
+inicializar_datos()
 
 st.set_page_config(page_title="Olist Data Coordinator Dashboard", layout="wide")
 st.title("📊 Dashboard de Control - Olist Store")
