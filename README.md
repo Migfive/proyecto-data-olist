@@ -52,4 +52,4 @@ Siga estos pasos para replicar el entorno de análisis:
 ![Dashboard Preview](/dashboard_producto.png)
 
 ## 🎈 App desplegada
-![https://proyecto-data-olist-cir5zjvmucmhttv3onxhgf.streamlit.app/](https://proyecto-data-olist-cir5zjvmucmhttv3onxhgf.streamlit.app/)
+https://proyecto-data-olist-cir5zjvmucmhttv3onxhgf.streamlit.app/
