@@ -43,7 +43,7 @@ Siga estos pasos para replicar el entorno de análisis:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/Migfive/proyecto-data-olist.git](https://github.com/Migfive/proyecto-data-olist.git)
+   git clone https://github.com/Migfive/proyecto-data-olist.git
    cd proyecto-data-olist
 
 ---
