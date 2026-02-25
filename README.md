@@ -50,3 +50,6 @@ Siga estos pasos para replicar el entorno de análisis:
 
 ## 🚀 Vista Previa del Proyecto
 ![Dashboard Preview](/dashboard_producto.png)
+
+## 🎈 App desplegada
+![https://proyecto-data-olist-cir5zjvmucmhttv3onxhgf.streamlit.app/](https://proyecto-data-olist-cir5zjvmucmhttv3onxhgf.streamlit.app/)
