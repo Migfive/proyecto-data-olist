@@ -49,4 +49,4 @@ Siga estos pasos para replicar el entorno de análisis:
 ---
 
 ## 🚀 Vista Previa del Proyecto
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](/dashboard_producto.png)
